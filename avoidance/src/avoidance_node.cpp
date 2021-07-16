@@ -8,7 +8,8 @@ AvoidanceNode::AvoidanceNode(const ros::NodeHandle& nh, const ros::NodeHandle& n
   should_exit_ = false;
 
   timeout_termination_ = 15;
-  timeout_critical_ = 0.5;
+  // timeout_critical_ = 0.5;
+  timeout_critical_ = 4.0; // 
   timeout_startup_ = 5.0;
 
   mission_item_speed_ = NAN;
