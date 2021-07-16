@@ -392,7 +392,8 @@ void WaypointGenerator::getPathMsg() {
   output_.adapted_goto_position = output_.goto_position;
 
   float time_diff_sec = static_cast<float>((current_time_ - last_time_).toSec());
-  float dt = time_diff_sec > 0.0f ? time_diff_sec : 0.0001f;
+  // float dt = time_diff_sec > 0.0f ? time_diff_sec : 0.0001f;
+  float dt = 0.1000f;
 
   // set the yaw at the setpoint based on our smoothed location
   nextSmoothYaw(dt);
